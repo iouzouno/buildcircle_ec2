@@ -22,6 +22,3 @@ resource "aws_eip" "my_ip" {
   instance = aws_instance.terraform-instance.id
 }
 
-output "PublicIP" {
-  value = aws_instance.terraform-instance.public_ip
-}
